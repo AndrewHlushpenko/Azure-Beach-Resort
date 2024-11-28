@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Beach Resort</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="photo/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Навігація -->
+    <header class="navbar">
+<nav>
+    <ul>
+        <li><a href="#hero">Головна</a></li>
+        <li><a href="#about-us">Про нас</a></li>
+        <li><a href="#services">Послуги</a></li>
+        <li><a href="#gallery">Галерея</a></li>
+        <li><a href="#booking">Бронювання</a></li>
+        <li><a href="#footer">Контакти</a></li>
+    </ul>
+</nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1>Azure Beach Resort</h1>
+            <p>Незабутній відпочинок на березі моря</p>
+            <a href="#booking" class="hero-button">Забронювати зараз</a>
+        </div>
+    </section>
+
+<section class="about-us" id="about-us">
+    <div class="about-container">
+        <!-- Ліва колонка із зображенням -->
+        <div class="about-image">
+            <img src="photo/about_us.png" alt="Azure Beach Resort">
+        </div>
+        <!-- Права колонка із текстом -->
+        <div class="about-content">
+            <h2>Про нас</h2>
+            <p>
+                Azure Beach Resort — це курортний готель, що поєднує сучасний комфорт із природною красою. Ми пропонуємо
+                нашим гостям проживання в затишних номерах із видом на море, ексклюзивні послуги та незабутні враження
+                від відпочинку на березі океану.
+            </p>
+            <!-- Кнопка для розкриття додаткового тексту -->
+            <button id="more-info-btn">Дізнатися більше</button>
+            <!-- Додатковий текст -->
+            <div class="more-info" id="more-info">
+                <h3>Історія готелю</h3>
+                <p>Azure Beach Resort був заснований у 2005 році з метою створення ідеального місця для відпочинку на
+                    березі океану.</p>
+                <h3>Особливості</h3>
+                <p>Готель пропонує унікальний дизайн, сучасні зручності та багатофункціональні зони для відпочинку та
+                    розваг.</p>
+                <h3>Послуги</h3>
+                <p>У нашому готелі ви знайдете спа-центр, ресторан зі стравами місцевої кухні, басейн із видом на океан
+                    і багато іншого.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services" id="services">
+    <h2>Наші послуги</h2>
+    <div class="services-container">
+        <!-- Основні 3 карточки -->
+        <div class="service-card">
+            <img src="photo/servise-card/Sun Lounger.png" alt="Пляжний відпочинок">
+            <h3>Пляжний відпочинок</h3>
+            <p>Комфортний пляж із шезлонгами та парасольками для наших гостей.</p>
+        </div>
+        <div class="service-card">
+            <img src="photo/servise-card/Restaurant.png" alt="Ресторан">
+            <h3>Ресторан</h3>
+            <p>Вишукані страви міжнародної кухні в нашому затишному ресторані.</p>
+        </div>
+        <div class="service-card">
+            <img src="photo/servise-card/Spa.png" alt="Спа-процедури">
+            <h3>Спа-процедури</h3>
+            <p>Релаксація та відновлення завдяки нашому професійному спа-центру.</p>
+        </div>
+    </div>
+    <!-- Сховані додаткові 3 карточки -->
+    <div class="services-container hidden" id="hidden-services">
+        <div class="service-card">
+            <img src="photo/servise-card/Airport Transfer.png" alt="Трансфер">
+            <h3>Трансфер</h3>
+            <p>Комфортний трансфер до готелю та аеропорту для наших гостей.</p>
+        </div>
+        <div class="service-card">
+            <img src="photo/servise-card/Swimming Pool.png" alt="Басейн">
+            <h3>Басейн</h3>
+            <p>Відкритий басейн із видом на океан для вашого повного релаксу.</p>
+        </div>
+        <div class="service-card">
+            <img src="photo/servise-card/Exhibition.png" alt="Екскурсії">
+            <h3>Екскурсії</h3>
+            <p>Організація екскурсій для знайомства з місцевими пам'ятками.</p>
+        </div>
+    </div>
+    <!-- Кнопка -->
+    <button id="show-more-btn" class="services-button">Дізнатися більше</button>
+</section>
+
+
+<section class="gallery" id="gallery">
+    <h2>Галерея</h2>
+    <div class="gallery-container">
+        <!-- Навігаційна кнопка Вліво -->
+        <button class="carousel-btn prev" aria-label="Попереднє фото"><img src="photo/galary/Back.png" alt="button left"></button>
+
+        <!-- Карусель зображень -->
+        <div class="carousel">
+            <div class="carousel-track">
+                <!-- Дубльовані елементи для циклічності -->
+                <div class="carousel-item">
+                    <img src="photo/galary/five`s foto.png" alt="Тераса">
+                    <p>Тераса</p>
+                </div>
+                <!-- Основні елементи -->
+                <div class="carousel-item">
+                    <img src="photo/galary/first foto.png" alt="Вид із номера">
+                    <p>Вид із номера</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="photo/galary/second foto.png" alt="Басейн">
+                    <p>Басейн</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="photo/galary/third foto.png" alt="Ресторан на березі моря">
+                    <p>Ресторан на березі моря</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="photo/galary/four`s foto.png" alt="Спа-процедури">
+                    <p>Спа-процедури</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="photo/galary/five`s foto.png" alt="Тераса">
+                    <p>Тераса</p>
+                </div>
+                <!-- Дубльовані елементи для циклічності -->
+                <div class="carousel-item">
+                    <img src="photo/galary/first foto.png" alt="Вид із номера">
+                    <p>Вид із номера</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Навігаційна кнопка Вправо -->
+        <button class="carousel-btn next" aria-label="Наступне фото"><img src="photo/galary/Forward.png" alt="right"></button>
+    </div>
+</section>
+
+
+
+<section class="booking" id="booking">
+    <h2>Бронювання номерів</h2>
+    <form class="booking-form">
+        <!-- Поле "Ваше ім'я" -->
+        <div class="form-group">
+            <input type="text" placeholder="Ваше ім'я" required>
+        </div>
+        <!-- Поле "Номер телефону" -->
+        <div class="form-group">
+            <input type="tel" placeholder="Номер телефону" required>
+        </div>
+        <!-- Поле "Дати перебування" -->
+        <div class="form-group">
+            <input type="text" placeholder="Дати перебування" required>
+        </div>
+        <!-- Кнопка "Надіслати" -->
+        <button type="submit">Надіслати</button>
+    </form>
+</section>
+
+
+<footer class="footer" id="footer">
+    <div class="footer-container">
+        <!-- Ліва частина - Контакти -->
+        <div class="footer-contacts">
+            <p>Адреса: вул. Приморська, 12, Azure City</p>
+            <p>Телефон: +380 44 123 45 67</p>
+            <p>Email: <a href="mailto:info@azurebeach.com">info@azurebeach.com</a></p>
+        </div>
+        <!-- Права частина - Соцмережі -->
+        <div class="footer-socials">
+            <a href="#" class="social-icon"> <img src="photo/footer/Facebook.png" alt="Facebook"></a>
+            <a href="#" class="social-icon"> <img src="photo/footer/X.png" alt="X(twitter)"></a>
+            <a href="#" class="social-icon"> <img src="photo/footer/Instagram.png" alt="Instagram"></a>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- Кнопка догори -->
+    <button id="scrollToTop" class="scroll-to-top">↑</button>
+
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
